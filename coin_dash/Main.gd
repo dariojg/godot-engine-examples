@@ -43,6 +43,8 @@ func spawn_coins():
 		$CoinContainer.add_child(c)
 		#c.screensize = screensize  # no entiendo por c.screensize
 		c.position = Vector2(rand_range(0, screensize.x), rand_range(0, screensize.y))
+	
+	$LevelSound.play()
 
 
 func _on_GameTimer_timeout():
@@ -55,6 +57,7 @@ func _on_GameTimer_timeout():
 func _on_Player_pickup():
 	score += 1
 	$HUD.update_score(score)
+	$CoinSound.play()
 
 
 func _on_Player_hurt():
@@ -70,10 +73,4 @@ func game_over():
 	
 	$HUD.show_game_over()
 	$Player.die()
-	
-
-
-
-
-func _on_HUD_start_game():
-	pass # Replace with function body.
+	$EndSound.play()
