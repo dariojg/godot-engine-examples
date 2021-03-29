@@ -33,23 +33,23 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 9.12491, 10.1325 )
+extents = Vector2( 8.9149, 10.0586 )
 
 [node name="Player" type="Area2D"]
+scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 speed = 350
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.78656, 0.629249 )
+scale = Vector2( 1.04767, 0.960672 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 2.35969 )
+position = Vector2( -1.78814e-07, 5.50594 )
 shape = SubResource( 2 )
 
 [node name="Coin" type="Area2D" parent="."]
