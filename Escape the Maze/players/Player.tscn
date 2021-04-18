@@ -60,3 +60,4 @@ stream = ExtResource( 4 )
 [node name="Lose" type="AudioStreamPlayer" parent="." index="11"]
 stream = ExtResource( 5 )
 [connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]
+[connection signal="dead" from="." to="." method="_on_Player_dead"]

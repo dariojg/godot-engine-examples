@@ -18,7 +18,8 @@ func _ready():
 	for cell in $Walls.get_used_cells_by_id(door_id):
 		doors.append(cell)
 	spawn_items()
-	$Player.connect('dead', self, 'game_over')
+	print("Connecting signals")
+	$Player.connect("dead", self, "game_over")
 	$Player.connect('grabbed_key', self, '_on_Player_grabbed_key')
 	$Player.connect('win', self, 'on_Player_win')	
 

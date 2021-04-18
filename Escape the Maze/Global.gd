@@ -7,8 +7,8 @@ var levels = [
 	]
 
 var current_level 
-var start_screen = 'res://ui/startScreen.tscn'
-var end_screen = 'res://ui/endScreen.tscn'
+var start_screen = 'res://ui/StartScreen.tscn'
+var end_screen = 'res://ui/EndScreen.tscn'
 var score
 var highscore = 0
 var score_file = "user://higscore.txt"

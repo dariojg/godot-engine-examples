@@ -19,23 +19,12 @@ __meta__ = {
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 334.131
+margin_top = 254.846
+margin_right = 593.131
+margin_bottom = 288.846
 custom_fonts/font = SubResource( 1 )
-text = "Escape the Maze!"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label2" type="Label" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 49.0814
-margin_top = 124.591
-margin_right = 407.081
-margin_bottom = 158.591
-custom_fonts/font = SubResource( 1 )
-text = "Press <space>"
+text = "Game Over"
 align = 1
 valign = 1
 __meta__ = {
